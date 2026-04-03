@@ -1,0 +1,284 @@
+{
+  "project_metadata": {
+    "project_name": "crossfit-foundry-factory",
+    "project_category": "Fitness/Gym Landing Page",
+    "description": "Industrial one-page CrossFit landing in [City], bold mono type, blocky layouts, glass overlays, safety yellow/charcoal. Hero gym photo. All essential info: WOD ticker, schedule/pricing, coach bios, calendar, photos, free trial.",
+    "core_purpose": "Convert leads and engage local CrossFit community with raw, modern web presence.",
+    "target_audience": "Active adults, athletes, fitness seekers in [City]",
+    "key_features": [
+      "Sticky hero section with photo/headline",
+      "Scrolling WOD ticker",
+      "Class schedule and pricing",
+      "Coach bios (certified)",
+      "Community event calendar",
+      "Photo gallery",
+      "Free trial lead form",
+      "24/7 info, map, dev credits in footer"
+    ]
+  },
+  "frontend": {
+    "pages": [
+      {
+        "page_name": "Home",
+        "route": "/",
+        "show_in_nav": true,
+        "nav_order": 1,
+        "purpose": "Convert CrossFit prospects via one-page info/cta-heavy landing.",
+        "description": "Single-page vertical layout. Top: glassy charcoal header, logo left, nav links right. Next: hero (gym floor image right, big yellow all-caps headline left, huge cta button below text), then sticky yellow WOD ticker. Main content: 2-col schedule/pricing, glass coach cards, glass event calendar. Member gallery as vivid photo grid. Center glass free trial form. Footer: two-row (location/map left, dev + anobyte credits bottom), all in heavy fonts, high-contrast, clear icon use. No sidebar.",
+        "sections": [
+          "Header",
+          "HeroSection",
+          "WodTicker",
+          "ClassSchedule",
+          "CoachProfiles",
+          "EventCalendar",
+          "MemberGallery",
+          "FreeTrialForm",
+          "Footer"
+        ],
+        "content_notes": "All content in single vertically-scrolling landing page. Hero photo and text prominent, only 1 strong CTA. WOD ticker must always be visible after hero. Meta tags for gym, developer, and theme. Safety yellow/charcoal palette throughout. Use industrial/concrete textures for backgrounds, blocky layouts, no rounded corners except on coach cards and glass overlays. Strong image focus, bold uppercase headlines, heavy shadows for main overlays. All interactive elements comply with accessibility and keyboard nav. Minimal motion: ticker, button hover, calendar modal. MVP trims all non-critical features.",
+        "data_needs": [
+          "hero_image",
+          "wod",
+          "class_schedule",
+          "pricing",
+          "coach_profiles",
+          "event_calendar",
+          "gallery_images"
+        ],
+        "is_protected": false
+      }
+    ],
+    "navigation": {
+      "type": "bar",
+      "position": "top-fixed",
+      "style": "blocky, bold, safety yellow accent, icon logo left, uppercase, gap-8",
+      "has_logo": true,
+      "has_search": false,
+      "extra_items": [
+        "favicon",
+        "logo"
+      ],
+      "links": [
+        {
+          "label": "WOD",
+          "route": "#wod"
+        },
+        {
+          "label": "Schedule",
+          "route": "#schedule"
+        },
+        {
+          "label": "Coaches",
+          "route": "#coaches"
+        },
+        {
+          "label": "Events",
+          "route": "#events"
+        },
+        {
+          "label": "Gallery",
+          "route": "#gallery"
+        },
+        {
+          "label": "Start Free Trial",
+          "route": "#trial"
+        }
+      ]
+    },
+    "theme": {
+      "design_dna": "MINIMALIST_MONO + heavy industrial + glass overlays",
+      "color_scheme": "charcoal/safety yellow/white/black",
+      "primary_color": "#22272A",
+      "secondary_color": "#111212",
+      "accent_color": "#ffe600",
+      "font_family": "Playfair Display (headlines), Inter (body)",
+      "font_type": "Serif/Bold Sans",
+      "border_radius": "0 (glass overlays/coach cards: 20px)",
+      "shadow_style": "heavy drop/box, neon yellow inner",
+      "animation_style": "subtle-glow, ticker-scroll, modal-fade",
+      "interaction_style": "blocky hover glow, underline, scale-up buttons, glassmorphism overlays"
+    },
+    "components": [
+      {
+        "component_name": "Header",
+        "type": "navigation",
+        "description": "Full-width charcoal header, fixed, z-50, flexbox justified-between, px-12 py-4, logo (industrial barbell icon, safety yellow, left), nav links (white, heavy, uppercase, right, gap-8), sticky on scroll, subtle concrete texture backdrop. All nav links smooth-highlight safety yellow on hover. Logo clickable to '/'.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Top navigation, quick access to sections with industrial branding.",
+        "props": [
+          "logo_src",
+          "nav_links"
+        ]
+      },
+      {
+        "component_name": "HeroSection",
+        "type": "section",
+        "description": "100vw hero with 60vh min-height, concrete-texture bg, bold headline (6xl, Playfair Display, all-caps, safety yellow, drop shadow) top left, big gym floor photo (high-contrast, industrial, right-align, aspect 16:7, subtle masonry overlay), pill-shaped 'Start Free Trial' primary button right below headline (safety yellow, black text, extra-bold, hover: black fill, yellow text, glow).",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Immediate impact, key headline, clear main CTA.",
+        "props": [
+          "headline",
+          "hero_image",
+          "cta_label"
+        ]
+      },
+      {
+        "component_name": "WodTicker",
+        "type": "widget",
+        "description": "Horizontal ticker bar below hero photo (sticky, z-40), safety yellow bg, black type, monospace, smooth left-to-right motion, pill-edge left/right, 2xl font, 2px strong black border top/bottom. Displays current day's WOD in rotation. Pause on hover, animates on load.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Showcase daily workout, create urgency.",
+        "props": [
+          "wod_text"
+        ]
+      },
+      {
+        "component_name": "ClassSchedule",
+        "type": "section",
+        "description": "2-column layout, left: black bg, schedule table (white text, heavy lines, yellow highlights for today), right: pricing cards (drop-in/monthly, blocky, outlined in safety yellow, bold font). Padding-x:16, y:12, boxed shadow, glassmorphism over concrete. Responsive stack to 1 col below md. 'Book Drop-in' button (pill safety yellow, bold) per card with hover scale.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Display schedule and sign-up/pricing info.",
+        "props": [
+          "schedule_data",
+          "pricing_data"
+        ]
+      },
+      {
+        "component_name": "CoachProfiles",
+        "type": "section",
+        "description": "Full-width flex row, gap-7, coach cards glass panels (blur:20px, radius:20px), each card: headshot (grayscale overlay, circular), name (heavy, yellow), cert badges (pill, outline-yellow), bio (condensed, 2 lines, white). Cards: shadow-lg, hover scale 1.03, border-black 2px. Responsive wrap, px-10, py-8.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Highlight certified coaches, build trust.",
+        "props": [
+          "coaches"
+        ]
+      },
+      {
+        "component_name": "EventCalendar",
+        "type": "widget",
+        "description": "Boxed container (glass over charcoal, radius:20px, px-9 py-8), month row in bold yellow, week grid, each event: minimal card (black fill, yellow border left, white bold text), click opens modal: event details, RSVP button. Top-right: navigation arrows (yellow fill, black icon, pill). Calendar grid: 7-col, 6-row, strong borders. Responsive scroll at sm.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "List upcoming/community events, RSVPs.",
+        "props": [
+          "event_data"
+        ]
+      },
+      {
+        "component_name": "MemberGallery",
+        "type": "gallery",
+        "description": "Wide gallery grid (masonry, 3 cols desktop, 2 cols tablet, 1 col mobile), images: high-contrast, desaturated/steel blue overlay, black frame (4px), caption overlay (yellow pill, all-caps, bottom-left), images hover-scale with fade overlay. Gaps:10px vertical/horizontal. z-0.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Visual proof of community, gym atmosphere.",
+        "props": [
+          "gallery_images"
+        ]
+      },
+      {
+        "component_name": "FreeTrialForm",
+        "type": "form",
+        "description": "Glass panel center-aligned, px-12 py-9, shadow-[0_6px_32px_-8px_black], headline (3xl, Playfair, yellow), form: name, email, phone, submit button (full, yellow pill, bold), error in red below, success in safety yellow, smooth transitions. Autofocus first input. Accessible labels above all fields.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Capture leads for free week trial.",
+        "props": [
+          "onSubmit"
+        ]
+      },
+      {
+        "component_name": "Footer",
+        "type": "footer",
+        "description": "Full-width charcoal footer, 2 columns: left=24/7 gym info (heavy, all-caps, yellow), address, map embed (rounded, outlined yellow), parking tips (white, small). Bottom bar: 'Developed by anointedthedeveloper' (yellow) and GitHub link (black icon), 'Powered by Anobyte' (yellow) with link. Small nav, favicon+logo at far left. All text heavy, condensed, uppercase, links have underline on hover.",
+        "used_on": [
+          "Home"
+        ],
+        "purpose": "Contact, location, dev credits.",
+        "props": [
+          "address",
+          "github_url",
+          "anobyte_url",
+          "footer_links"
+        ]
+      }
+    ],
+    "layout": {
+      "has_header": true,
+      "has_footer": true,
+      "has_sidebar": false,
+      "max_width": "1460px",
+      "spacing": "px-0 py-0",
+      "footer_links": [
+        {
+          "label": "Schedule",
+          "route": "#schedule"
+        },
+        {
+          "label": "Coaches",
+          "route": "#coaches"
+        },
+        {
+          "label": "Events",
+          "route": "#events"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "requires_backend": false,
+    "apis": [],
+    "database": {
+      "models": []
+    },
+    "authentication": {
+      "required": false,
+      "type": "",
+      "providers": [],
+      "protected_apis": null
+    },
+    "external_apis": [],
+    "file_storage": {
+      "required": false,
+      "types": [],
+      "max_size": ""
+    }
+  },
+  "technical_specs": {
+    "frontend": {
+      "framework": "React",
+      "routing": "react-router-dom, single route '/'",
+      "styling": "TailwindCSS 4, custom CSS (concrete texture, glass overlays)",
+      "state_management": "hook state, mvp",
+      "animation": "Framer Motion (ticker, modals, button hover)",
+      "dependencies": [
+        "react-router-dom",
+        "tailwindcss@4.0.0",
+        "framer-motion",
+        "@faker-js/faker"
+      ]
+    },
+    "backend": {
+      "framework": "Go (Gin)",
+      "database": "",
+      "orm": "GORM",
+      "auth": "",
+      "dependencies": [
+        "@faker-js/faker"
+      ]
+    }
+  }
+}
