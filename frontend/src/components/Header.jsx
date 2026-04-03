@@ -51,14 +51,14 @@ export default function Header({ logo_src, nav_links = NAV_LINKS }) {
         <a
           href="/"
           className="flex items-center gap-3 group select-none"
-          aria-label="Crossfit Foundry Factory Home"
+          aria-label="Foundry Factory Home"
         >
           <span className="flex items-center justify-center w-10 h-10 bg-[#ffe600] group-hover:bg-yellow-300 transition-colors duration-200">
             <ZapIcon size={22} className="text-[#22272A]" strokeWidth={2.5} />
           </span>
           <span className="font-playfair font-black text-white text-xl md:text-2xl tracking-tight uppercase leading-none">
-            Crossfit
-            <span className="text-[#ffe600] ml-1">Foundry</span>
+            Foundry
+            <span className="text-[#ffe600] ml-1">Factory</span>
           </span>
         </a>
 

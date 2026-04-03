@@ -8,7 +8,7 @@ function WodTicker({ wod_text }) {
 
   const defaultWod =
     wod_text ||
-    'TODAY\'S WOD: 21-15-9 — Thrusters (95/65 lb) + Pull-Ups — "FRAN" — For Time — Scale as needed — Coaches on floor at 0600, 0900, 1200, 1700, 1900';
+    'TODAY\'S WOD: 21-15-9 — Thrusters (95/65 lb) + Pull-Ups — For Time — Scale as needed — Coaches on floor at 0600, 0900, 1200, 1700, 1900';
 
   const repeatedText = `${defaultWod}  ■  ${defaultWod}  ■  ${defaultWod}  ■  ${defaultWod}  ■  `;
 

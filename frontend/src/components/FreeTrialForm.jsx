@@ -70,7 +70,7 @@ export default function FreeTrialForm({ onSubmit }) {
           <>
             <div className="mb-8">
               <p className="font-inter text-xs font-bold uppercase tracking-[0.22em] text-[#ffe600]/70 mb-3">
-                Crossfit Foundry Factory
+                Foundry Factory
               </p>
               <h2 className="font-playfair text-3xl font-bold leading-tight text-[#ffe600]">
                 Claim Your Free Week Trial
@@ -189,7 +189,7 @@ export default function FreeTrialForm({ onSubmit }) {
                 You're In.
               </h3>
               <p className="font-inter text-sm text-white/60 leading-relaxed max-w-xs">
-                Welcome to Crossfit Foundry Factory. We'll reach out within 24 hours to schedule your first session.
+                Welcome to Foundry Factory. We'll reach out within 24 hours to schedule your first session.
               </p>
             </div>
             <div className="mt-2 w-full border-t border-white/10 pt-5">

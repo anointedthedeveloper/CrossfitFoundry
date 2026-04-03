@@ -37,7 +37,7 @@ export default function HeroSection({
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-[3px] bg-[#ffe600]" />
             <span className="font-playfair text-[#ffe600]/80 text-sm tracking-[0.3em] uppercase font-bold">
-              CrossFit Foundry Factory
+              Foundry Factory
             </span>
           </div>
 
@@ -50,7 +50,7 @@ export default function HeroSection({
           <div className="w-full h-[3px] bg-[#ffe600] mt-6 mb-8 max-w-xs" />
 
           <p className="font-inter text-white/70 text-base md:text-lg leading-relaxed max-w-sm mb-10">
-            Real training. Real results. Join the industrial-grade CrossFit community that forges elite athletes from the ground up.
+            Real training. Real results. Join the industrial-grade gym community that forges elite athletes from the ground up.
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -97,10 +97,10 @@ export default function HeroSection({
             <div className="relative overflow-hidden rounded-[20px] shadow-[0_24px_80px_rgba(0,0,0,0.7)]" style={{aspectRatio: '16/7'}}>
               <img
                 src={hero_image}
-                alt="CrossFit Foundry Factory gym floor with athletes training"
+                alt="Foundry Factory gym floor with athletes training"
                 className="w-full h-full object-cover object-center brightness-75 contrast-110"
                 onError={(e) => {
-                  e.currentTarget.src = 'https://placehold.co/1280x560/22272A/ffe600?text=CROSSFIT+FOUNDRY';
+                  e.currentTarget.src = 'https://placehold.co/1280x560/22272A/ffe600?text=FOUNDRY+FACTORY';
                 }}
               />
 
@@ -119,7 +119,7 @@ export default function HeroSection({
                   <Icons.Flame className="w-5 h-5 text-[#ffe600]" />
                   <span className="font-inter font-bold text-white text-sm">Today's WOD</span>
                 </div>
-                <span className="font-playfair font-black text-[#ffe600] text-sm uppercase tracking-wider">AMRAP 20: Fran Complex</span>
+                <span className="font-playfair font-black text-[#ffe600] text-sm uppercase tracking-wider">AMRAP 20: Strength Complex</span>
               </div>
             </div>
           </div>

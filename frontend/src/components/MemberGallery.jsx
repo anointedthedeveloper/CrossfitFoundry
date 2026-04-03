@@ -17,17 +17,17 @@ const GALLERY_CAPTIONS = [
 ];
 
 const GALLERY_KEYWORDS = [
-  "crossfit workout gym barbell",
+  "athlete workout gym barbell",
   "athlete lifting weights industrial gym",
-  "crossfit community training group",
+  "gym community training group",
   "powerlifting deadlift gym floor",
-  "crossfit box pullups rings",
+  "gym box pullups rings",
   "gym athlete rope climb",
-  "crossfit WOD kettlebell swings",
+  "kettlebell swings workout",
   "barbell squat rack gym training",
-  "crossfit open competition athlete",
+  "open competition athlete gym",
   "gym floor tire flip athlete",
-  "crossfit team workout endurance",
+  "team workout endurance training",
   "heavy lift olympic weightlifting",
 ];
 

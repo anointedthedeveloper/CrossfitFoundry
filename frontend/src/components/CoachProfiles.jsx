@@ -5,8 +5,8 @@ const coaches = [
     id: 1,
     name: 'Marcus Reid',
     title: 'Head Coach',
-    certifications: ['CF-L3', 'Olympic Lifting', 'Nutrition Coach'],
-    bio: 'Former D1 athlete with 12 years in functional fitness. Specializes in Olympic lifting mechanics and high-performance programming.',
+    certifications: ['L3 Trainer', 'Olympic Lifting', 'Nutrition Coach'],
+    bio: 'Former D1 athlete with 12 years in functional fitness. Specializes in Olympic lifting mechanics and high-performance programming.',,
     avatar: 'https://placehold.co/200x200/22272A/ffe600?text=MR',
     years: 12,
   },
@@ -14,8 +14,8 @@ const coaches = [
     id: 2,
     name: 'Dana Wolfe',
     title: 'Strength & Conditioning',
-    certifications: ['CF-L2', 'CSCS', 'Mobility Specialist'],
-    bio: 'CSCS-certified coach obsessed with movement quality. Guides athletes from first pull-up to podium-level performance.',
+    certifications: ['L2 Trainer', 'CSCS', 'Mobility Specialist'],
+    bio: 'CSCS-certified coach obsessed with movement quality. Guides athletes from first pull-up to podium-level performance.',,
     avatar: 'https://placehold.co/200x200/22272A/ffe600?text=DW',
     years: 8,
   },
@@ -23,7 +23,7 @@ const coaches = [
     id: 3,
     name: 'Torres Vega',
     title: 'Endurance Coach',
-    certifications: ['CF-L2', 'USA Weightlifting', 'CPT'],
+    certifications: ['L2 Trainer', 'USA Weightlifting', 'CPT'],
     bio: 'Ironman finisher and metabolic conditioning expert. Builds engine capacity through intelligent periodization and grit.',
     avatar: 'https://placehold.co/200x200/22272A/ffe600?text=TV',
     years: 6,
@@ -32,8 +32,8 @@ const coaches = [
     id: 4,
     name: 'Priya Nair',
     title: 'Gymnastics & Skills',
-    certifications: ['CF-L2', 'FRC', 'Yoga RYT-200'],
-    bio: 'Former competitive gymnast who translates elite body control into scalable CrossFit skills for all levels.',
+    certifications: ['L2 Trainer', 'FRC', 'Yoga RYT-200'],
+    bio: 'Former competitive gymnast who translates elite body control into scalable gym skills for all levels.',,
     avatar: 'https://placehold.co/200x200/22272A/ffe600?text=PN',
     years: 9,
   },
@@ -64,7 +64,7 @@ function CoachCard({ coach }) {
             alt={coach.name}
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
             onError={(e) => {
-              e.currentTarget.src = 'https://placehold.co/200x200/22272A/ffe600?text=CF';
+              e.currentTarget.src = 'https://placehold.co/200x200/22272A/ffe600?text=FF';
             }}
           />
         </div>
@@ -132,7 +132,7 @@ function CoachProfiles({ coaches: coachesProp }) {
           </div>
           <div className="flex items-center gap-3 text-white/40 text-sm font-bold uppercase tracking-widest">
             <ShieldIcon size={18} className="text-yellow-400" />
-            <span>All CrossFit Certified</span>
+            <span>All Certified Coaches</span>
             <span className="text-yellow-400">·</span>
             <UsersIcon size={18} className="text-yellow-400" />
             <span>{data.length} Coaches</span>
@@ -147,7 +147,7 @@ function CoachProfiles({ coaches: coachesProp }) {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-white/30 text-xs uppercase tracking-[0.25em] font-bold">
-            CrossFit Foundry Factory — Forged by Certified Athletes
+            Foundry Factory — Forged by Certified Athletes
           </p>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-yellow-400 animate-pulse" />

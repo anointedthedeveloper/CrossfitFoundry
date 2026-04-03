@@ -29,7 +29,7 @@ function Footer({ address, github_url, anobyte_url, footer_links }) {
             <div>
               <a href="#" className="inline-block mb-6">
                 <span className="font-playfair text-2xl font-black tracking-widest uppercase text-[#ffe600]">
-                  Crossfit<span className="text-white">Foundry</span>
+                  Foundry<span className="text-white">Factory</span>
                 </span>
               </a>
               <div className="flex items-center gap-3 mb-2">
@@ -72,10 +72,10 @@ function Footer({ address, github_url, anobyte_url, footer_links }) {
                 <div>
                   <p className="font-inter text-[10px] font-black tracking-[0.2em] uppercase text-white/40 mb-1">Email</p>
                   <a
-                    href="mailto:info@crossfitfoundry.com"
+                    href="mailto:info@foundryfactory.com"
                     className="font-inter text-sm font-bold tracking-wider uppercase text-white hover:text-[#ffe600] transition-colors duration-200 underline-offset-4 hover:underline"
                   >
-                    info@crossfitfoundry.com
+                    info@foundryfactory.com
                   </a>
                 </div>
               </div>
@@ -100,7 +100,7 @@ function Footer({ address, github_url, anobyte_url, footer_links }) {
               </p>
               <div className="w-full h-56 md:h-72 border-2 border-[#ffe600] overflow-hidden">
                 <iframe
-                  title="Crossfit Foundry Factory Location"
+                  title="Foundry Factory Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.5!2d-87.6298!3d41.8781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzQxLjIiTiA4N8KwMzcnNDcuMyJX!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
                   className="w-full h-full grayscale contrast-125"
                   loading="lazy"
@@ -136,10 +136,10 @@ function Footer({ address, github_url, anobyte_url, footer_links }) {
             <div className="flex items-center gap-2">
               <ZapIcon size={14} className="text-[#ffe600]" strokeWidth={3} />
               <span className="font-playfair text-base font-black tracking-widest uppercase text-[#ffe600]">
-                Crossfit
+                Foundry
               </span>
               <span className="font-playfair text-base font-black tracking-widest uppercase text-white">
-                Foundry Factory
+                Factory
               </span>
             </div>
 
@@ -200,7 +200,7 @@ function Footer({ address, github_url, anobyte_url, footer_links }) {
             </div>
 
             <p className="font-inter text-[9px] font-bold tracking-[0.2em] uppercase text-white/20">
-              © {new Date().getFullYear()} Crossfit Foundry Factory. All Rights Reserved.
+              © {new Date().getFullYear()} Foundry Factory. All Rights Reserved.
             </p>
           </div>
         </div>

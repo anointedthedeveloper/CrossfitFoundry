@@ -1,12 +1,55 @@
-# React + Vite
+# Foundry Factory — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Industrial-grade gym landing page built with React + Vite + Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** — UI
+- **Vite 7** — build tool with HMR
+- **Tailwind CSS v4** — utility-first styling
+- **Lucide React** — icons
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build → `dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.jsx          # Sticky nav
+│   ├── HeroSection.jsx     # Hero + CTA
+│   ├── WodTicker.jsx       # Scrolling workout ticker
+│   ├── ClassSchedule.jsx   # Weekly schedule + pricing
+│   ├── CoachProfiles.jsx   # Coach cards
+│   ├── EventCalendar.jsx   # Monthly event calendar
+│   ├── MemberGallery.jsx   # Masonry photo gallery
+│   ├── FreeTrialForm.jsx   # Lead capture form
+│   └── Footer.jsx          # Footer + map
+├── pages/
+│   └── Home.jsx
+├── config/
+│   └── api.js
+└── main.jsx
+```
+
+## Deploy to Vercel
+
+The `vercel.json` at the root of this folder is pre-configured. Just connect the repo in the Vercel dashboard and set the **Root Directory** to `frontend`.
+
+All SPA routes are rewritten to `index.html` automatically.
