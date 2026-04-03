@@ -21,7 +21,7 @@ const SAMPLE_EVENT_DATA = [
   {
     id: 'e1',
     title: 'FOUNDRY OPEN THROWDOWN',
-    description: 'Annual in-house gym competition. Athletes of all skill levels are welcome. Scaled and RX divisions. Prize podium, judges panel, and spectator zone fully set up.',,
+    description: 'Annual in-house gym competition. Athletes of all skill levels are welcome. Scaled and RX divisions. Prize podium, judges panel, and spectator zone fully set up.',
     category: 'COMPETITION',
     date: new Date(new Date().getFullYear(), new Date().getMonth(), 6),
     time: '08:00 AM – 04:00 PM',
@@ -45,7 +45,7 @@ const SAMPLE_EVENT_DATA = [
   {
     id: 'e3',
     title: 'COMMUNITY FREE TRIAL',
-    description: 'Bring a friend for free. Guided intro workout, tour of the facility, and a Q&A with our head coaches. No experience necessary.',,
+    description: 'Bring a friend for free. Guided intro workout, tour of the facility, and a Q&A with our head coaches. No experience necessary.',
     category: 'FREE TRIAL',
     date: new Date(new Date().getFullYear(), new Date().getMonth(), 14),
     time: '10:00 AM – 12:00 PM',
@@ -93,7 +93,7 @@ const SAMPLE_EVENT_DATA = [
   {
     id: 'e7',
     title: 'GYMNASTICS SKILLS WORKSHOP',
-    description: 'Break down ring muscle-ups, bar muscle-ups, and handstand push-ups with coach-led progressions. Beginner-friendly with scaling for all levels.',,
+    description: 'Break down ring muscle-ups, bar muscle-ups, and handstand push-ups with coach-led progressions. Beginner-friendly with scaling for all levels.',
     category: 'WORKSHOP',
     date: new Date(new Date().getFullYear(), new Date().getMonth() + 1, 4),
     time: '10:00 AM – 12:00 PM',
